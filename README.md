@@ -1,2 +1,2 @@
-# cheapdeck
-Cheap Stream Deck alternative
+# LibreDeck
+Libre Stream Deck alternative
