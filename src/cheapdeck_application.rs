@@ -1,4 +1,4 @@
-use iced::{executor, Application, Command, Element, Column, Row, Button, button, Text, Length};
+use iced::{executor, Application, Clipboard, Command, Element, Column, Row, Button, button, Text, Length};
 
 pub struct CheapdeckApplication {
   button_states: Vec<button::State>,
@@ -22,7 +22,11 @@ impl Application for CheapdeckApplication {
       String::from("Cheapdeck")
   }
 
-  fn update(&mut self, _message: Self::Message) -> Command<Self::Message> {
+  fn update(
+    &mut self,
+    _message: Self::Message,
+    _clipboard: &mut Clipboard,
+  ) -> Command<Self::Message> {
       Command::none()
   }
 
